@@ -9,10 +9,10 @@ class BasicCalcTest {
     }
     @org.junit.jupiter.api.Test
     public void subTract() {BasicCalc subTract = new BasicCalc();
-        assertEquals(10,BasicCalc.subTract(20,10));
+        assertEquals(10,BasicCalc.subtract(20,10));
 
     }
-    /*@org.junit.jupiter.api.Test
+    @org.junit.jupiter.api.Test
     public void multiply() {BasicCalc multiply = new BasicCalc();
         assertEquals(200,BasicCalc.multiply(20,10));
 
@@ -27,7 +27,7 @@ class BasicCalcTest {
         assertEquals(4,BasicCalc.square(2));
 
     }
-    @org.junit.jupiter.api.Test
+    /*@org.junit.jupiter.api.Test
     public void squareRoot() {BasicCalc squareRoot = new BasicCalc();
         assertEquals(2,BasicCalc.squareRoot(4));
 
