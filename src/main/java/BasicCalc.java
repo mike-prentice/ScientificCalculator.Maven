@@ -3,5 +3,9 @@ public class BasicCalc {
      return num1 + num2;
     }
 
+    static double subTract(double num1, double num2) {
+        return num1 - num2;
+    }
+
     }
 
