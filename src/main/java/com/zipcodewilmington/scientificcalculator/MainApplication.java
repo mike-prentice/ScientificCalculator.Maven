@@ -1,19 +1,22 @@
 package com.zipcodewilmington.scientificcalculator;
 import java.util.Scanner;
 
+
 /**
  * Created by leon on 2/9/18.
  */
 public class MainApplication {
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double num1, num2;
         char operator;
         int base = 0;
 
+
         //ADD A CHOICE FUNCTION A/B: BASIC OR SCIENCE
 
-        //ADD A CLEAR DISPLAY(BACK TO ZERO FUNCTION)
+
 
         //NEED TO WRAP EVERYTHING BELOW WELCOME AND STOPPING AT SC CALC CHOICES IN ITS OWN CLASS/METHOD
         Console.println("Welcome to my calculator!");
@@ -81,7 +84,7 @@ public class MainApplication {
 
 
         //Scientific Calculator Switch
-        switch(operator) {
+        switch(choice) {
             case '1' :
                 Calculator sine= new Calculator();
                 double sin = sine.sine(num1);
@@ -125,10 +128,15 @@ public class MainApplication {
                 break;
         }
 
+
 //Switch for scientific calculator functions
 
-
-
+        //ADD A CLEAR DISPLAY(BACK TO ZERO FUNCTION)
+        System.out.println("TYPE MC TO CLEAR");
+        String clear = input.next();
+        if (clear.equals("MC")||clear.equals("mc")) {
+            System.out.println(base);
+        }
 
         /*
         String s = Console.getStringInput("Enter a string");
