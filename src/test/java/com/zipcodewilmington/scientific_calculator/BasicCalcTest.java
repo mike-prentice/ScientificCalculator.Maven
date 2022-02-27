@@ -1,3 +1,7 @@
+package com.zipcodewilmington.scientific_calculator;
+
+import com.zipcodewilmington.scientificcalculator.BasicCalc;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class BasicCalcTest {
@@ -9,10 +13,10 @@ class BasicCalcTest {
     }
     @org.junit.jupiter.api.Test
     public void subTract() {BasicCalc subTract = new BasicCalc();
-        assertEquals(10,BasicCalc.subTract(20,10));
+        assertEquals(10, BasicCalc.subtract(20,10));
 
     }
-    /*@org.junit.jupiter.api.Test
+    @org.junit.jupiter.api.Test
     public void multiply() {BasicCalc multiply = new BasicCalc();
         assertEquals(200,BasicCalc.multiply(20,10));
 
@@ -20,6 +24,7 @@ class BasicCalcTest {
     @org.junit.jupiter.api.Test
     public void divide() {BasicCalc divide = new BasicCalc();
         assertEquals(2,BasicCalc.divide(20,10));
+        //assertEquals(com.zipcodewilmington.scientificcalculator.BasicCalc.isFinite(), com.zipcodewilmington.scientificcalculator.BasicCalc.divide(20,0));
 
     }
     @org.junit.jupiter.api.Test
@@ -34,8 +39,8 @@ class BasicCalcTest {
     }
     @org.junit.jupiter.api.Test
     public void inverse() {BasicCalc inverse = new BasicCalc();
-        assertEquals(-10,BasicCalc.inverse(10));
+        assertEquals(.10 ,BasicCalc.inverse(10));
 
-    }*/
+    }
 
 }
