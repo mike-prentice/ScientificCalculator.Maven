@@ -26,7 +26,48 @@ public class MainApplication {
         System.out.println(num2);
 
 
+// Basic calculations switch
+        switch(operator) {
+            case '+' :
+                BasicCalc result= new BasicCalc();
+                double addition = result.add(num1, num2);
+                System.out.println(addition);
+                break;
 
+            case '-' :
+                BasicCalc subtract= new BasicCalc();
+                double subtraction = subtract.subtract(num1, num2);
+                System.out.println(subtraction);
+                break;
+
+            case '*' :
+                BasicCalc multiply= new BasicCalc();
+                double multiplication = multiply.multiply(num1, num2);
+                System.out.println(multiplication);
+                break;
+
+            case '/' :
+                BasicCalc divide= new BasicCalc();
+                double division = divide.divide(num1, num2);
+                System.out.println(division);
+                break;
+        }
+
+
+// Choose a function
+        System.out.println("\n\nPLEASE CHOOSE A FUNCTION : \n");
+        System.out.println(" 1. Sin");
+        System.out.println(" 2. Cos");
+        System.out.println(" 3. Tan");
+        System.out.println(" 4. Factorial");
+        System.out.println(" 5. Square");
+        System.out.println(" 6. Square Root");
+        System.out.println(" 7. Inverse");
+        System.out.println("Enter CHOICE NUMBER");
+
+        int choice = input.nextInt();
+
+//Switch for scientific calculator functions
 
 
 
