@@ -312,16 +312,62 @@ class ScienceCalcTest {
     public void inverseTangentTest1() {
         //Given
         Calculator calculator = new Calculator();
-        double input = 1;
+        double input = 0;
         double expected = 0;
 
         //When
-        double actual = calculator.inverseCosine(input);
+        double actual = calculator.inverseTangent(input);
 
         //Then
         Assert.assertEquals(expected,actual, .01);
         System.out.println(expected);
     }
+
+    @Test
+    public void inverseTangentTest2() {
+        //Given
+        Calculator calculator = new Calculator();
+        double input = .57735;
+        double expected = 30;
+
+        //When
+        double actual = calculator.inverseTangent(input);
+
+        //Then
+        Assert.assertEquals(expected,actual, .001);
+        System.out.println(expected);
+    }
+
+    @Test
+    public void inverseTangentTest3() {
+        //Given
+        Calculator calculator = new Calculator();
+        double input = 1.732;
+        double expected = 60;
+
+        //When
+        double actual = calculator.inverseTangent(input);
+
+        //Then
+        Assert.assertEquals(expected,actual, .01);
+        System.out.println(expected);
+    }
+
+    @Test
+    public void inverseTangentTest4() {
+        //Given
+        Calculator calculator = new Calculator();
+        double input = 1;
+        double expected = 45;
+
+        //When
+        double actual = calculator.inverseTangent(input);
+
+        //Then
+        Assert.assertEquals(expected,actual, .01);
+        System.out.println(expected);
+    }
+
     @Test
     public void naturalLongTest1() {
         //Given
@@ -517,6 +563,109 @@ class ScienceCalcTest {
         System.out.println(expected);
     }
 
+    @Test
+    public void absoluteValueTest1() {
+        //Given
+        Calculator calculator = new Calculator();
+        double input = -.015625;
+        double expected = .015625;
 
+        //When
+        double actual = calculator.absoluteValue(input);
+
+        //Then
+        Assert.assertEquals(expected,actual, .01);
+        System.out.println(expected);
+    }
+
+    @Test
+    public void absoluteValueTest2() {
+        //Given
+        Calculator calculator = new Calculator();
+        double input = -62;
+        double expected = 62;
+
+        //When
+        double actual = calculator.absoluteValue(input);
+
+        //Then
+        Assert.assertEquals(expected,actual, .01);
+        System.out.println(expected);
+    }
+
+    @Test
+    public void absoluteValueTest3() {
+        //Given
+        Calculator calculator = new Calculator();
+        double input = 87;
+        double expected = 87;
+
+        //When
+        double actual = calculator.absoluteValue(input);
+
+        //Then
+        Assert.assertEquals(expected,actual, .01);
+        System.out.println(expected);
+    }
+
+    @Test
+    public void factorialTest1() {
+        //Given
+        Calculator calculator = new Calculator();
+        double input = -5;
+        double expected = 1;
+
+        //When
+        double actual = calculator.factorial(input);
+
+        //Then
+        Assert.assertEquals(expected,actual, .01);
+        System.out.println(expected);
+    }
+
+    @Test
+    public void factorialTest2() {
+        //Given
+        Calculator calculator = new Calculator();
+        double input = 5;
+        double expected = 120;
+
+        //When
+        double actual = calculator.factorial(input);
+
+        //Then
+        Assert.assertEquals(expected,actual, .01);
+        System.out.println(expected);
+    }
+
+    @Test
+    public void factorialTest3() {
+        //Given
+        Calculator calculator = new Calculator();
+        double input = 7;
+        double expected = 5040;
+
+        //When
+        double actual = calculator.factorial(input);
+
+        //Then
+        Assert.assertEquals(expected,actual, .01);
+        System.out.println(expected);
+    }
+
+    @Test
+    public void factorialTest4() {
+        //Given
+        Calculator calculator = new Calculator();
+        double input = 1;
+        double expected = 1;
+
+        //When
+        double actual = calculator.factorial(input);
+
+        //Then
+        Assert.assertEquals(expected,actual, .01);
+        System.out.println(expected);
+    }
 
 }
