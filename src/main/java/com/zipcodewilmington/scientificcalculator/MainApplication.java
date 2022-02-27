@@ -54,6 +54,20 @@ public class MainApplication {
         }
 
 
+// Choose a function
+        System.out.println("\n\nPLEASE CHOOSE A FUNCTION : \n");
+        System.out.println(" 1. Sin");
+        System.out.println(" 2. Cos");
+        System.out.println(" 3. Tan");
+        System.out.println(" 4. Factorial");
+        System.out.println(" 5. Square");
+        System.out.println(" 6. Square Root");
+        System.out.println(" 7. Inverse");
+        System.out.println("Enter CHOICE NUMBER");
+
+        int choice = input.nextInt();
+
+//Switch for scientific calculator functions
 
 
 
