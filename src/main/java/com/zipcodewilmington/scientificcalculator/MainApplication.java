@@ -25,8 +25,33 @@ public class MainApplication {
         num2 = input.nextDouble();
         System.out.println(num2);
 
-        BasicCalc result= new BasicCalc();
-        double calculation = result.add(num1, num2);
+
+// Basic calculations switch
+        switch(operator) {
+            case '+' :
+                BasicCalc result= new BasicCalc();
+                double addition = result.add(num1, num2);
+                System.out.println(addition);
+                break;
+
+            case '-' :
+                BasicCalc subtract= new BasicCalc();
+                double subtraction = subtract.subtract(num1, num2);
+                System.out.println(subtraction);
+                break;
+
+            case '*' :
+                BasicCalc multiply= new BasicCalc();
+                double multiplication = multiply.multiply(num1, num2);
+                System.out.println(multiplication);
+                break;
+
+            case '/' :
+                BasicCalc divide= new BasicCalc();
+                double division = divide.divide(num1, num2);
+                System.out.println(division);
+                break;
+        }
 
 
 
