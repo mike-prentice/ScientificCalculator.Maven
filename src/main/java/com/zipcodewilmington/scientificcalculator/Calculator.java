@@ -4,43 +4,43 @@ public class Calculator {
 
     public double output;
 
-    public double sine(double input) {
-        output = Math.sin(Math.toRadians(input));
+    public double sine(double num1) {
+        output = Math.sin(Math.toRadians(num1));
         return output;
     }
 
-    public double cosine(double input) {
-        output = Math.cos(Math.toRadians(input));
+    public double cosine(double num1) {
+        output = Math.cos(Math.toRadians(num1));
         return output;
     }
 
-    public double tangent(double input) {
-        output = Math.tan(Math.toRadians(input));
+    public double tangent(double num1) {
+        output = Math.tan(Math.toRadians(num1));
         return output;
     }
 
-    public double inverseSine(double input) {
-        output = (Math.asin(input) * (180/Math.PI));
+    public double inverseSine(double num1) {
+        output = (Math.asin(num1) * (180/Math.PI));
         return output;
     }
 
-    public double inverseCosine(double input) {
-        output = (Math.acos(input) * (180/Math.PI));
+    public double inverseCosine(double num1) {
+        output = (Math.acos(num1) * (180/Math.PI));
         return output;
     }
 
-    public double inverseTangent(double input) {
-        output = (Math.atan(input) * (180/Math.PI));
+    public double inverseTangent(double num1) {
+        output = (Math.atan(num1) * (180/Math.PI));
         return output;
     }
 
-    public double naturalLog(double input) {
-        output = Math.log(input);
+    public double naturalLog(double num1) {
+        output = Math.log(num1);
         return output;
     }
 
-    public double log(double input) {
-        output = Math.log10(input);
+    public double log(double num1) {
+        output = Math.log10(num1);
         return output;
 
     }
