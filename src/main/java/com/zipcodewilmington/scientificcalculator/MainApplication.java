@@ -25,6 +25,8 @@ public class MainApplication {
         num2 = input.nextDouble();
         System.out.println(num2);
 
+        BasicCalc result= new BasicCalc();
+        double calculation = result.add(num1, num2);
 
 
 
