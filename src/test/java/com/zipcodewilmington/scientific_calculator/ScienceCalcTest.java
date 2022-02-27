@@ -1,3 +1,6 @@
+package com.zipcodewilmington.scientific_calculator;
+
+import com.zipcodewilmington.scientificcalculator.Calculator;
 import org.junit.jupiter.api.Test;
 import org.junit.Assert;
 
@@ -174,7 +177,7 @@ class ScienceCalcTest {
 //    @Test
 //    public void tangentTest4() {
 //        //Given
-//        Calculator calculator = new Calculator();
+//        com.zipcodewilmington.scientificcalculator.Calculator calculator = new com.zipcodewilmington.scientificcalculator.Calculator();
 //        double input = 90;
 //        double expected = Double.NaN;
 //
