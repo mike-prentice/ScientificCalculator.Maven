@@ -36,27 +36,33 @@ public class MainApplication {
             case '+' :
                 BasicCalc result= new BasicCalc();
                 double addition = result.add(num1, num2);
-                System.out.println(addition);
+                System.out.println("Here is your calculation: " + num1 + " " + "+ " + num2 + " = " + addition);
                 break;
 
 
             case '-' :
                 BasicCalc subtract= new BasicCalc();
                 double subtraction = subtract.subtract(num1, num2);
-                System.out.println(subtraction);
+                System.out.println("Here is your calculation: " + num1 + " " + "+ " + num2 + " = " + subtraction);
                 break;
 
             case '*' :
                 BasicCalc multiply= new BasicCalc();
                 double multiplication = multiply.multiply(num1, num2);
-                System.out.println(multiplication);
+                System.out.println("Here is your calculation: " + num1 + " " + "+ " + num2 + " = " + multiplication);
                 break;
 
             case '/' :
                 BasicCalc divide= new BasicCalc();
                 double division = divide.divide(num1, num2);
-                System.out.println(division);
+                System.out.println("Here is your calculation: " + num1 + " " + "+ " + num2 + " = " + division);
                 break;
+
+            default:
+                String s = Character.toString(operator);
+                s = "Invalid Input!";
+                System.out.println(s);
+
         }
 //NEED TO WRAP SCIENTIFIC CALC IN ITS OWN CLASS/METHOD
 
@@ -78,19 +84,19 @@ public class MainApplication {
         switch(operator) {
             case '1' :
                 Calculator sine= new Calculator();
-                double sin = sine.sine(input);
+                double sin = sine.sine(num1);
                 System.out.println(sin);
                 break;
 
             case '2' :
                 Calculator cosine = new Calculator();
-                double cos = cosine.cosine(input);
+                double cos = cosine.cosine(num1);
                 System.out.println(cos);
                 break;
 
             case '3' :
                 Calculator tangent = new Calculator();
-                double tan = tangent.tangent(input);
+                double tan = tangent.tangent(num1);
                 System.out.println(tan);
                 break;
 
@@ -102,38 +108,22 @@ public class MainApplication {
 
             case '5' :
                 BasicCalc square= new BasicCalc();
-                double sq = square.square(num1, num2);
+                double sq = square.square(num1);
                 System.out.println(sq);
                 break;
 
             case '6' :
                 BasicCalc squareroot = new BasicCalc();
-                double squarert =squareroot.squareRoot(num1, num2);
+                double squarert =squareroot.squareRoot(num1);
                 System.out.println(squarert);
                 break;
 
             case '7' :
                 BasicCalc inverse = new BasicCalc();
-                double invert = inverse.inverse(num1, num2);
+                double invert = inverse.inverse(num1);
                 System.out.println(invert);
                 break;
         }
-
-
-
-
-// Choose a function
-        System.out.println("\n\nPLEASE CHOOSE A FUNCTION : \n");
-        System.out.println(" 1. Sin");
-        System.out.println(" 2. Cos");
-        System.out.println(" 3. Tan");
-        System.out.println(" 4. Factorial");
-        System.out.println(" 5. Square");
-        System.out.println(" 6. Square Root");
-        System.out.println(" 7. Inverse");
-        System.out.println("Enter CHOICE NUMBER");
-
-        int choice = input.nextInt();
 
 //Switch for scientific calculator functions
 
