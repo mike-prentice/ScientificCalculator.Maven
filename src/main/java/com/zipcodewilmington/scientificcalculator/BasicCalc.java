@@ -11,21 +11,18 @@ public class BasicCalc {
     //Addition method
     public static double add(double num1, double num2) {
         result = num1 + num2;
-        System.out.println(result);
         return result;
     }
 
     //Subtraction method
     public static double subtract(double num1, double num2) {
         result = num1 - num2;
-        System.out.println(result);
         return result;
     }
 
     //Multiplication method
     public static double multiply(double num1, double num2) {
         result = num1 * num2;
-        System.out.println(result);
         return result;
     }
 
@@ -43,21 +40,18 @@ public class BasicCalc {
     //Square method
     public static double square(double num1) {
         result = num1 * num1;
-        System.out.println(result);
         return result;
     }
 
     //Square root method
     public static double squareRoot(double num1) {
         result = Math.sqrt(num1);
-        System.out.println(result);
         return result;
     }
 
     //Power Method
     public static double power(double num1, double num2) {
         result = Math.pow(num1, num2);
-        System.out.println(result);
         return result;
     }
 
