@@ -45,33 +45,33 @@ public class Calculator {
 
     }
 
-    public double inverseLn(double input) {
-        output = Math.exp(input);
+    public double inverseLn(double num1) {
+        output = Math.exp(num1);
         return output;
     }
 
-    public double inverseLog(double input) {
-        output = Math.pow(10, input);
+    public double inverseLog(double num1) {
+        output = Math.pow(10, num1);
         return output;
     }
 
-    public double cubeRoot(double input) {
-        output = Math.cbrt(input);
+    public double cubeRoot(double num1) {
+        output = Math.cbrt(num1);
         return output;
     }
 
 
-    public double absoluteValue(double input) {
-        output = Math.abs(input);
+    public double absoluteValue(double num1) {
+        output = Math.abs(num1);
         return output;
     }
 
-    public double factorial(double input) {
+    public double factorial(double num1) {
         output = 1;
-        if(input < 0)  {
+        if(num1 < 0)  {
             System.out.println("Can't find the factorial of a negative number");
         } else {
-            for(int i = 1; i <= input; i++) {
+            for(int i = 1; i <= num1; i++) {
                 output = output * i;
             }
         }
